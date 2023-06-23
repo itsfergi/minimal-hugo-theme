@@ -1,8 +1,10 @@
 .cube-container {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: relative;
     perspective: 160px;
+    margin: auto;
+    margin-right: 30px;
 }
 
 .cube.cube {
@@ -13,41 +15,41 @@
     animation: rotate 8s linear infinite;
 }
 
-.cube.face {
-    width: 40px;
-    height: 40px;
+.face {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    opacity: 0.cube.7;
+    opacity: 0.7;
 }
 
-.cube.face-front {
+.face-front {
     background-color: #222222;
-    transform: translateZ(20px);
+    transform: translateZ(15px);
 }
 
-.cube.face-back {
+.face-back {
     background-color: #444444;
-    transform: rotateY(180deg) translateZ(20px);
+    transform: rotateY(180deg) translateZ(15px);
 }
 
-.cube.face-top {
+.face-top {
     background-color: #666666;
-    transform: rotateX(90deg) translateZ(20px);
+    transform: rotateX(90deg) translateZ(15px);
 }
 
-.cube.face-bottom {
+.face-bottom {
     background-color: #888888;
-    transform: rotateX(-90deg) translateZ(20px);
+    transform: rotateX(-90deg) translateZ(15px);
 }
 
-.cube.face-left {
+.face-left {
     background-color: #AAAAAA;
-    transform: rotateY(-90deg) translateZ(20px);
+    transform: rotateY(-90deg) translateZ(15px);
 }
 
-.cube.face-right {
+.face-right {
     background-color: #CCCCCC;
-    transform: rotateY(90deg) translateZ(20px);
+    transform: rotateY(90deg) translateZ(15px);
 }
 
 @keyframes rotate {
