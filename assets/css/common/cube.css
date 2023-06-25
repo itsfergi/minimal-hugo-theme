@@ -5,6 +5,7 @@
     perspective: 160px;
     margin: auto;
     margin-right: 30px;
+    transform-style: preserve-3d;
 }
 
 .cube.cube {
@@ -38,7 +39,7 @@
 }
 
 .face-bottom {
-    background-color: #888888;
+    background-color: var(--accent);
     transform: rotateX(-90deg) translateZ(15px);
 }
 
